@@ -1,0 +1,36 @@
+{
+  "name": "brunoaugustosilva.github.io",
+  "version": "1.0.0",
+  "description": "Um programador com a esperança de ser bem remunerado",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo 'teste'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoaugustosilva/brunoaugustosilva.github.io.git"
+  },
+  "keywords": [
+    "Programador;",
+    "Web",
+    "Designer;",
+    "front-end"
+  ],
+  "author": "Bruno Augusto da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoaugustosilva/brunoaugustosilva.github.io/issues"
+  },
+  "homepage": "https://github.com/brunoaugustosilva/brunoaugustosilva.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "csscomb": "^4.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-neat": "^2.0.0-beta.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,19 @@
+/**
+*   Basic typography style for copy text
+*/
+
+body
+{
+    font: 1em $text-font-stack;  color: $theme-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+    font: 1em $secondary-font-stack;
+}

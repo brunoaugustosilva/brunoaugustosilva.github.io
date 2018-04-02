@@ -1,0 +1,29 @@
+
+//Regular font family
+//@type List
+
+$text-font-stack: ('Open Sans', 'Open Sans Regular', 'Open Sans Light', 'Arial', sans-serif) !default;
+
+//secondary font family
+//@type List
+
+$secondary-font-stack: ('Roboto Slab', 'Roboto Slab Bold', 'Roboto Slab Regular', 'Courier New', serif) !default;
+
+
+$theme-white: hsl(0, 0%, 93%) !default;
+$theme-black: hsl(0, 0%, 20%) !default;
+$theme-violet: hsl(340, 57%, 64%) !default;
+
+$breakpoints: (
+    'micro': 320px,
+    'small': 767px,
+    'regular': 992px,
+    'medium': 1024px,
+    'large': 1200px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/src/' !default;
