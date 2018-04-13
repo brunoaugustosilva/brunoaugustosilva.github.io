@@ -1,0 +1,7 @@
+.card{
+    @extend %card;
+}
+
+.card__title{
+    @extend %card__title;
+}

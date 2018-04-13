@@ -4,16 +4,23 @@
 
 body
 {
-    font: 1em $text-font-stack;  color: $theme-white;
+    font: ms(0) $text-font-stack;  
+    color: $main-theme-fg;
+    line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p
+h1, h2, h3, h4, h5, 
+h6
 {
-    font: 1em $secondary-font-stack;
+    font-family: $secondary-font-stack !important;
+}
+
+@for $i from 1 through 7 {
+    h#{$i}{
+        font-size: ms(2 / $i) !important;
+    }
+}
+
+.Bicons{
+    font-family: $icon-font-stack;
 }

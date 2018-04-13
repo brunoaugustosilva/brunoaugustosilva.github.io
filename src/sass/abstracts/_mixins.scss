@@ -40,3 +40,12 @@
         @content;
     }
 }
+
+/// Tamanho da Box Model
+/// @acess public
+/// @param {Number} $width - largura
+/// @param {Number} $height - Altura
+@mixin size($width, $height: $width){
+    width: $width;
+    height: $height;
+}

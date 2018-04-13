@@ -27,19 +27,12 @@
     <!-- Facebook -->
     <!--Folhas de estilo-->
     <style>
-        body{
-            background-color: #333;
-            color: #333;
-        }
-        a{
-            color: #333
-        }
         .loader{
             height: 100px;
             width: 100%;
             text-align: center;
             position: fixed;
-            z-index: 1;
+            z-index: -1;
             top: calc(50% - 50px);
             display: inline-block;
             vertical-align: top;
@@ -63,17 +56,18 @@
         </svg>
     </div>
     <main class="main">
-        <label for="menu-cell" class="label"></label>
-        <input type="checkbox" name="menu-cell" class="label__cell" id="menu-cell">
         <header class="header">
+            <div class="header__title">
+                <h1>Bruno</h1>
+            </div>
             <div class="header__menu">
                 <nav class="header__menu__nav">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#modelos">Modelos 3D</a></li>
-                        <li><a href="#linguagens">Linguagens</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a class="Bicons" href="#">H</a></li>
+                        <li><a class="Bicons" href="#sobre">K</a></li>
+                        <li><a class="Bicons" href="#modelos">A</a></li>
+                        <li><a class="Bicons" href="#linguagens">M</a></li>
+                        <li><a class="Bicons" href="#contato">S</a></li>
                     </ul>
                 </nav>
             </div>
@@ -84,39 +78,57 @@
                     <h1></h1>
                 </div>
                 <div class="article__content">
-                    
                 </div>
             </article>
             <article class="article--white" id="sobre">
                 <div class="article__title">
                     <h1>Sobre</h1>
+                    <h2>Historia do autor</h2>
                 </div>
                 <div class="article__content">
-                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis porttitor purus. Sed in ipsum faucibus, tristique felis vitae, laoreet turpis. Aenean pharetra at neque mollis eleifend. Praesent luctus posuere dictum. Praesent varius et risus eget posuere. Sed quis nisi velit. Nam placerat nisi sed bibendum ullamcorper. Aenean ultrices quam eget lorem scelerisque feugiat. Sed id elit enim.</p>
                 </div>
             </article>
-            <article class="article">
-                <div class="article__title" id="modelos">
+            <article class="article" id="modelos">
+                <div class="article__title" >
                     <h1>Modelos 3D</h1>
+                    <h2>Portfólio</h2>
                 </div>
                 <div class="article__content">
-                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis porttitor purus. Sed in ipsum faucibus, tristique felis vitae, laoreet turpis. Aenean pharetra at neque mollis eleifend. Praesent luctus posuere dictum. Praesent varius et risus eget posuere. Sed quis nisi velit. Nam placerat nisi sed bibendum ullamcorper. Aenean ultrices quam eget lorem scelerisque feugiat. Sed id elit enim.
+                    </p>
                 </div>
             </article>
             <article class="article--white" id="linguagens">
                 <div class="article__title">
                     <h1>Linguagens</h1>
+                    <h2>Espectro de conhecimento</h2>
                 </div>
                 <div class="article__content">
-                    
+                    <div class="carrousel">
+                        <div class="card">
+                            <div class="card__title Bicons">
+                                <p>D</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__title Bicons">
+                                <h1></h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
             <article class="article" id="contato">
                 <div class="article__title">
                     <h1>Contato</h1>
+                    <h2>Obtenha mais informações</h2>
                 </div>
                 <div class="article__content">
-                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis porttitor purus. Sed in ipsum faucibus, tristique felis vitae, laoreet turpis. Aenean pharetra at neque mollis eleifend. Praesent luctus posuere dictum. Praesent varius et risus eget posuere. Sed quis nisi velit. Nam placerat nisi sed bibendum ullamcorper. Aenean ultrices quam eget lorem scelerisque feugiat. Sed id elit enim.
+                    </p>
                 </div>
             </article>
         </section>

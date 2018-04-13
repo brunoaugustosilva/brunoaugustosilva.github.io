@@ -4,19 +4,31 @@
 {
     z-index: 3;
 
-    width: 100%;
-    height: 100vmax;
+    background: $main-theme;
 
-    background: $theme-black;
+    transition: all 0.5s ease-in;
+
+    &:target{
+        animation: opacity 1s;
+        $menu-item: attr(data-item);
+    }
 
     &__title
     {
         text-align: center;
+        margin-top: 70px
+    }
+
+    &__content{
+        text-align: justify;
+        padding: 8px 12px;
+        line-height: 1.5;
+        text-indent: 5%
     }
 
     &--white
     {
-        color: $theme-black;
-        background: $theme-white;
+        color: $main-theme;
+        background: $main-theme-fg;
     }
 }

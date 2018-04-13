@@ -3,6 +3,10 @@ html
     box-sizing: border-box;
 }
 
+body{
+    background-color: $main-theme
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -18,13 +22,18 @@ html
 
 a
 {
-    padding: 12px 16px;text-decoration: none;color: $theme-black;@include on-event
+    padding: 12px 16px;  
+    text-decoration: none;
+    color: $main-theme-fg;
+
+    @include on-event
     {
-        color: $theme-violet;
+        color: $main-theme-fg2;
     }
 }
 
 ul
 {
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
 }

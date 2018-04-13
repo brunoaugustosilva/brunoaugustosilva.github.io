@@ -9,17 +9,33 @@ $text-font-stack: ('Open Sans', 'Open Sans Regular', 'Open Sans Light', 'Arial',
 
 $secondary-font-stack: ('Roboto Slab', 'Roboto Slab Bold', 'Roboto Slab Regular', 'Courier New', serif) !default;
 
+//terceary font family
+//@type List
+
+$icon-font-stack: ('Bruno-Icons') !default;
+
 
 $theme-white: hsl(0, 0%, 93%) !default;
 $theme-black: hsl(0, 0%, 20%) !default;
-$theme-violet: hsl(340, 57%, 64%) !default;
+$theme-violet: hsl(340, 57%, 61%) !default;
+$theme-green: hsl(94, 48%, 34%) !default;
+
+
+$main-theme: $theme-green;
+$main-theme-fg: tint($main-theme, 20);
+$main-theme-fg2: shade($main-theme, 20);
 
 $breakpoints: (
-    'micro': 320px,
-    'small': 767px,
-    'regular': 992px,
-    'medium': 1024px,
-    'large': 1200px,
+    'micro': (min-width: 320px),
+    'small': (min-width: 767px),
+    'regular': (min-width: 992px),
+    'medium': (min-width:1024px),
+    'large': (min-width:1200px),
+) !default;
+
+$modularscale: (
+    'base': 12px, 
+    'ratio': 1.618,
 ) !default;
 
 /// Relative or absolute URL where all assets are served from

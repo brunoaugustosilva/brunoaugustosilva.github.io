@@ -1,0 +1,5 @@
+.carrousel{
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: repeat(2, 95%);
+}
