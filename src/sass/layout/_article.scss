@@ -6,6 +6,7 @@
 
     background: $main-theme;
 
+    
     transition: all 0.5s ease-in;
 
     &:target{
@@ -16,14 +17,19 @@
     &__title
     {
         text-align: center;
-        margin-top: 70px
+        margin-top: 70px;
     }
 
     &__content{
-        text-align: justify;
+        text-align: center;
         padding: 8px 12px;
         line-height: 1.5;
-        text-indent: 5%
+        text-indent: 5%;
+
+        @include media("medium"){
+            width: 500px;
+            margin: 0 auto
+        }
     }
 
     &--white

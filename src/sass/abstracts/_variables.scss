@@ -12,7 +12,7 @@ $secondary-font-stack: ('Roboto Slab', 'Roboto Slab Bold', 'Roboto Slab Regular'
 //terceary font family
 //@type List
 
-$icon-font-stack: ('Bruno-Icons') !default;
+$icon-font-stack: ('Bicons', 'sans-serif') !default;
 
 
 $theme-white: hsl(0, 0%, 93%) !default;
@@ -43,3 +43,15 @@ $modularscale: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/src/' !default;
+
+$text-justify: (
+    'initial', 
+    'justify', 
+    'center', 
+    'rigth', 
+    'left', 
+    'start', 
+    'unset', 
+    'end', 
+    'inherit',
+) !default;

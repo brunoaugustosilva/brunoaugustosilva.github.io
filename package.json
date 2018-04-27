@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/brunoaugustosilva/brunoaugustosilva.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.23.7",
     "csscomb": "^4.2.0",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",

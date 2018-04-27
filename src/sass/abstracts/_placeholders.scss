@@ -1,9 +1,30 @@
 %card{
     border-radius: 4px;
-    //text-shadow: long-shadow(to left, 15em, #2980b9, #e67e22);
+    min-width: 300px;
+    height: 350px;
+
+    &--bg{
+        background: 10%/cover image('code.jpg') $main-theme;
+    }
 
     &__title{
         text-align: center;
-        font-size: ms(2);
+
+        &--shadow{
+            text-shadow: long-shadow($main-theme);
+        }
+    }
+
+    &__content{
+        position: absolute;
+        text-indent: 12px;
+        text-align: center;
+        height: 220px;
+        overflow-y: auto;
+
+        @include media("medium"){
+            right: 300px;
+            @include size(700px, 400px);
+        }
     }
 }

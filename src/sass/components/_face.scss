@@ -1,0 +1,7 @@
+.face{
+    background: no-repeat 20%/cover image('face.jpg');
+    @include size(70px);
+    border-radius: 50%;
+    margin: 30px auto;
+    border: 2px solid 
+}

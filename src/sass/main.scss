@@ -1,7 +1,7 @@
 @import 'abstracts/functions';
+@import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
-@import 'abstracts/variables';
 
 @import 'base/animations';
 @import 'base/fonts';
@@ -11,8 +11,10 @@
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/carrousel';
+@import 'components/contact';
 @import 'components/cover';
 @import 'components/dropdown';
+@import 'components/face';
 @import 'components/thumbnails';
 
 @import 'layout/article';

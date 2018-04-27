@@ -59,7 +59,7 @@ gulp.task('browser-sync', function(){
     });
 });
 
-gulp.task('server:watch', ['sass', 'sass-doc', 'browser-sync'], function () {
+gulp.task('default', ['sass', 'sass-doc', 'browser-sync'], function () {
     gulp.watch('*.html').on('change', browserSync.reload);
     gulp.watch([
         './src/sass/*.scss',

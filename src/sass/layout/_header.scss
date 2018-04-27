@@ -1,28 +1,48 @@
 .header
 {
-    font-weight: bolder;
+    //font-weight: bolder;
 
     background: $main-theme;
 
     position: sticky;
     z-index: 5;
-    top: -95px;
+    top: -70px;
 
     transition: all .5s ease-in-out;
 
-    display: grid;
+    font-weight: bolder;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
     box-shadow: 0 1px 5px $main-theme;
+
+    @include media("medium"){
+        flex-flow: row;
+        top: 0;
+        justify-content: flex-start
+    }
 
     &__title{
         background: $main-theme;
-
+        margin-top: 0 !important;
+        flex: 1;
+        padding: 0;
         text-align: center;
+
+        @include media("medium")
+        {
+            h1{
+                margin: 0
+            }
+        }
     }
 
     &__menu
     {
         background: $main-theme;
         font-size: ms(1);
+        flex: 2;
 
         &__nav
         {

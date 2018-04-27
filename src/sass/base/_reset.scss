@@ -37,3 +37,26 @@ ul
     margin: 0;
     padding: 0;
 }
+
+mark{
+    background-color: $main-theme;
+    color: $main-theme-fg;
+}
+
+hr{
+    border: 1px solid;
+    width: 150px;
+}
+
+@each $justify in $text-justify{
+    .text-#{$justify}{
+        text-align: unquote($justify);
+    }
+}
+
+.Bicons{
+    &-1{font-size: ms(1)}
+    &-2{font-size: ms(2)}
+    &-3{font-size: ms(3)}
+    &-4{font-size: ms(4)}
+}

@@ -2,6 +2,18 @@
     @extend %card;
 }
 
+.--bg{
+    @extend %card--bg;
+}
+
 .card__title{
     @extend %card__title;
+}
+
+.--shadow{
+    @extend %card__title--shadow;
+}
+
+.card__content{
+    @extend %card__content;
 }
