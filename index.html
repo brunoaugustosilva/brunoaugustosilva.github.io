@@ -80,17 +80,22 @@
                 <div class="carrousel">
                     <div class="carrousel__arrow --previous Bicons">X</div>
                     <div class="carrousel__arrow --next Bicons">T</div>
-                    <div class="card --bg">
+                    <!--Use javascript replacement-->
+                    <div class="carrousel__info">
+                        <h1 class="carrousel__info_title"></h1>
+                        <p class="carrousel__info_content"></p>
+                    </div>
+                    <div class="card --code" aria-card-id="1">
                         <div class="card__title">
                             <h1>Programação</h1>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card --modeling" aria-card-id="2">
                         <div class="card__title">
                             <h1>Modelagem</h1>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card --design" aria-card-id="3">
                         <div class="card__title">
                             <h1>Design</h1>
                         </div>
@@ -129,6 +134,14 @@
                         composição musical até modelos 3D e nesse ponto é que vamos focar
                     </p>
                 </div>
+                <!--Init flex-->
+                <div class="article__port">
+                    <img class="article__port__image"/>
+                    <img class="article__port__image"/>
+                    <img class="article__port__image"/>
+                    <img class="article__port__image"/>
+                    <img class="article__port__image"/>
+                </div>
             </article>
             <article class="article--white" id="linguagens">
                 <div class="article__title">
@@ -143,49 +156,66 @@
                     <div class="carrousel__arrow --next Bicons">
                         T
                     </div>
+                    <!--Use javascript replacement-->
+                    <div class="card__content bouble">
+                        <h1 class="card__content__title"></h1>
+                        <p class="class__content__text"></p>
+                    </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="1">
                             <span>D</span>
                         </div>
-                        <div class="card__content bouble">
-                            <h1>C#</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sem eu lacus placerat dictum. Maecenas malesuada mauris malesuada, efficitur mi at, ultrices tellus. Sed tincidunt et arcu a sollicitudin. Donec luctus neque et nibh condimentum ultricies. Fusce lobortis sem sit amet ligula ultricies mollis. Etiam augue eros, dictum in porta quis, pulvinar at ante. Quisque eget lorem neque. Aenean dignissim nulla sit amet erat fringilla, non rhoncus tortor iaculis. Morbi bibendum viverra sapien sit amet ultricies. Nulla et diam vitae diam suscipit porta non vel orci. Phasellus auctor luctus augue</p>
-                        </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="2">
                             <span>E</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="3">
                             <span>F</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="4">
                             <span>K</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="5">
                             <span>N</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="6">
                             <span>V</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="7">
                             <span>Y</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                     <div class="card">
-                        <div class="card__title --shadow Bicons-4">
+                        <div class="card__title --shadow Bicons-4" aria-card-id="8">
                             <span>Z</span>
                         </div>
+                        <h1>C#</h1>
+                        <p>Linguagem percursora na programação, desenvolveu algumas aplicações no visual studio e desenvolveu diversos jogos na Unity</p>
                     </div>
                 </div>
             </article>
@@ -220,11 +250,30 @@
                             <a href="https://twitter.com/BrunoAugusto560">@BrunoAugusto560</a>
                         </span>
                     </div>
+                    <!--Makes more icons-->
+                    <div class="contact" title="Github">
+                        <span class="Bicons"></span>
+                        <span>
+                            <a href="https://github.com/brunoaugustosilva">@brunoaugustosilva</a>
+                        </span>
+                    </div>
+                    <div class="contact" title="Stackoverflow">
+                        <span class="Bicons"></span>
+                        <span>
+                            <a href="https://stackoverflow.com/users/13741331/bruno-augusto-sillva">bruno-augusto-sillva</a>
+                        </span>
+                    </div>
+                    <div class="contact" title="Linkedin">
+                        <span class="Bicons"></span>
+                        <span>
+                            <a href="https://www.linkedin.com/in/bruno-silva-25a824181/">bruno-silva-25a824181</a>
+                        </span>
+                    </div>
                 </div>
             </article>
         </section>
         <footer class="footer">
-            <p>Bruno Augusto &copy; 2018</p>
+            <p>BRUNO AUGUSTO DA SILVA &copy; 2018 - 2020</p>
         </footer>
     </main>
 </body>
