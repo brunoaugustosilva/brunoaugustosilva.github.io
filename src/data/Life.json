@@ -1,0 +1,30 @@
+{
+    "0": {
+        "name": "Sobre",
+        "Description": "Olá sou bruno, programador, técnico de informática pela ETEC Guaratinguetá, e futuro graduado na Fatec Guaratinguetá. Atualmente trabalho como analista desenvolvedor pela Liax Tecnologia da Informação. Possuo diversos hobbies relacionados com o ramo da computação nos quais saliento a modelagem 3D, programação de jogos e animação. Tenho diversas propostas que pode satisfazê-lo (claro se quiser falar comigo) logo aqui embaixo é so conferir (não machuca), muito obrigado desde já, por estar aqui."
+    },
+    "1": {
+        "name": "Etec",
+        "Description": "Ensino médio integrado com o técnico na ETEC Alfredo de Barros Santos. Foi um melhores momentos da minha vida, já que naquele momento pude ver o uso de diaria de ferramentas que antes eram situadas fora de mimnha realidade"
+    },
+    "2": {
+        "name": "CEL",
+        "Description": "Centro de estudos de linguas, realizado na escola conselheiro rodrigues alves de 2014-2016"
+    },
+    "3": {
+        "name": "Fatec",
+        "Description": "Faculdade de tecnologia que comecei logo em seguida da ETEC Guaratinguetá"
+    },
+    "4": {
+        "name": "Cisco",
+        "Description": ""
+    },
+    "5": {
+        "name": "Qualifica",
+        "Description": ""
+    },
+    "6": {
+        "name": "Liax",
+        "Description": ""
+    }
+}
