@@ -12,8 +12,10 @@ const useStyles = makeStyles({
     articleTitle: {
         color: 'inherit',
         letterSpacing: '-1.3px',
-        textAlign: 'center',
-        marginTop: '10vh',
+        display: 'flex',
+        flexFlow: 'column',
+        alignItems: 'center',
+        margin: '10vh 0',
         '& h1': {
             fontSize: '2em',
             margin: '0.67em 0',

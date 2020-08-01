@@ -32,11 +32,11 @@ export default function Menu() {
         <IconButton href="#home" className={classes.buttons}>
           <HomeIcon />
         </IconButton>
-        <IconButton href="#about">
-          <InfoIcon />
-        </IconButton>
         <IconButton href="#portfolio">
           <DirectionsCarIcon />
+        </IconButton>
+        <IconButton href="#about">
+          <InfoIcon />
         </IconButton>
         <IconButton href="#languages">
           <CodeIcon/>

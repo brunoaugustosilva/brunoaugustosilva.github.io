@@ -1,5 +1,8 @@
-import React from 'react';
-import { makeStyles, Typography, Slider } from '@material-ui/core';
+import React, { useState} from 'react';
+import { makeStyles, Typography, Slider} from '@material-ui/core';
+
+//data
+import { getLifeById } from '../hooks/GetData';
 
 const useStyles = makeStyles({
     content: {
@@ -16,6 +19,9 @@ const useStyles = makeStyles({
         borderRadius: '6px',
         boxShadow: '1px 2px 6px #0000007a',
     },
+    description: {
+        flexBasis: '50%',
+    },
     slider: {
         marginTop: '5vh',
         color: '#51802d',
@@ -24,31 +30,31 @@ const useStyles = makeStyles({
 
 const marks = [
     {
-        value: 0,
+        value: 1,
         label: 'Sobre',
     },
     {
-        value: 1,
+        value: 2,
         label: 'Etec',
     },
     {
-        value: 2,
+        value: 3,
         label: 'CEL'
     },
     {
-        value: 3,
+        value: 4,
         label: 'Fatec',
     },
     {
-        value: 4,
+        value: 5,
         label: 'Cisco'
     },
     {
-        value: 5,
+        value: 6,
         label: 'Qualifica',
     },
     {
-        value: 6,
+        value: 7,
         label: 'Liax'
     }
 ];
@@ -60,20 +66,29 @@ function valuetext(value) {
 export default function Sobre(){
     const classes = useStyles();
 
+    const [value, setValue] = useState(1);
+    
+    let result = getLifeById(value);
+    let content = result[0];
+
+    const handleChange = (event, value) => {
+        setValue(value);
+    }
+
     return(
         <div className={classes.content}>
-            <Typography variant="body1">
-                Olá sou bruno, programador, técnico de informática pela <br/><mark className={classes.mark}>ETEC Guaratinguetá</mark>, e futuro graduado na <mark className={classes.mark}>Fatec Guaratinguetá</mark>.
-                Atualmente trabalho como analista desenvolvedor pela <mark className={classes.mark}>Liax Tecnologia da Informação</mark>. 
-                Possuo diversos hobbies relacionados com o ramo da computação nos quais saliento a modelagem 3D, programação de jogos e animação. 
-                Tenho diversas propostas que pode satisfazê-lo (claro se quiser falar comigo) logo aqui embaixo é so conferir (não machuca), muito obrigado desde já, por estar aqui.
+            <Typography className={classes.description} variant="body1">
+                    {content.description}
             </Typography>
             <Slider className={classes.slider}
-                defaultValue={0}
+                defaultValue={1}
+                value={value}
                 getAriaValueText={valuetext}
                 aria-labelledby="discrete-slider-always"
                 step={1}
-                max={6}
+                min={1}
+                max={7}
+                onChangeCommitted={handleChange}
                 marks={marks}
                 valueLabelDisplay="off"
             />

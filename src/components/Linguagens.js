@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles} from '@material-ui/core';
 import Code from './Code';
+import { motion } from 'framer-motion';
 
 const useStyles = makeStyles({
     content: {
@@ -11,12 +12,20 @@ const useStyles = makeStyles({
         justifyContent: 'center',
     },
     sandBox: {
-        height: '100%',
-        flex: '5',
+        width: '100%',
         borderRadius: '4px',
-        margin: '0 50px 0 0',
         border: 0
     },
+    frame: {
+        display: 'flex',
+        justifyContent: 'center',
+        height: '100%',
+        margin: '0 35px',
+        flexBasis: '500px'
+    },
+    code: {
+        flexBasis: '380px'
+    }
 });
 
 export default function Linguagens(){
@@ -24,15 +33,24 @@ export default function Linguagens(){
 
     const [view, setView] = useState(true);
 
+    useEffect(() => {
+    });
+
+    const variants = {
+        selected: { opacity: 1, flexBasis: ['500px']},
+        unselected: { opacity: 0, flexBasis: ['0']},
+    }
+
     return(
         <div className={classes.content}>
-            {view ? <iframe className={classes.sandBox} title="sandBox"
-                src="https://codesandbox.io/embed/new?codemirror=1"
-                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-                hidenavigation="true"
-            ></iframe> : null}
-            <Code />
+            <motion.div className={classes.frame} animate={view ? "selected" : "unselected"} variants={variants}>
+                <iframe 
+                className={classes.sandBox} title="sandBox" 
+                src="https://repl.it/@brunoaugustosil/Fibonnaci?lite=true" scrolling="no"
+                allowtransparency="false" allowFullScreen={false} 
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+            </motion.div>
+            <Code className={classes.code} setView={(view) => setView(view)} view={view}/>
         </div>
     );
 }

@@ -1,20 +1,23 @@
-{
-    "1": {
+[
+    {
+        "id": 1,
         "title": "C sharp",
         "acronymous": "C#",
         "description": "Linguagem de programação",
         "content": "Linguagem inicialmente utilizada durante o 1º e 2º semestres da Fatec Guaratinguetá, amplamente utilizada em construção de sofwares de grandes desenvolvedoras e de sistemas operacionais."
     },
-    "2": {
+    {
+        "id": 2,
         "title": "Java",
         "acronymous": "Java",
         "description": "Linguagem de programação",
         "content": "Linguagem aprendida nos ensinos técnico e superior e utilizado para desenvolver softwares diversos"
     },
-    "3": {
+    {
+        "id": 3,
         "title": "SQL",
         "acronymouse": "SQL Server",
-        "description": "",
-        "content": ""
+        "description": "Linguagem de banco de dados",
+        "content": "Utilizado na construção dos projetos de TCC e utilizado na Liax Tecnologia"
     }
-}
+]

@@ -16,11 +16,13 @@ const useStyles = makeStyles({
         height: '100vh',
         paddingTop: '20px',
         color: '#51802d',
+        backgroundImage: 'linear-gradient(356deg, #51802d 15%, transparent 15.2%)',
         overflow: 'hidden'
     },
     containerReverse: {
         height: '100vh',
         backgroundColor: '#51802d',
+        backgroundImage: 'linear-gradient(356deg, #dce6d5 15%, transparent 15.2%)',
         paddingTop: '20px',
         color: '#dce6d5',
         overflow: 'hidden'
