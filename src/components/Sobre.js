@@ -78,7 +78,7 @@ export default function Sobre(){
     return(
         <div className={classes.content}>
             <Typography className={classes.description} variant="body1">
-                    {content.description}
+                     {content.description}
             </Typography>
             <Slider className={classes.slider}
                 defaultValue={1}
