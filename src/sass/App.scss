@@ -1,4 +1,33 @@
-body{
+body {
   background-color: #dce6d5;
   line-height: 1.5;
+}
+
+:root {
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Roboto, "Segoe UI"; /*60%*/
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
 }

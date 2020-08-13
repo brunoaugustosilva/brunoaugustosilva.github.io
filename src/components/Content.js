@@ -8,8 +8,9 @@ import Linguagens from './Linguagens';
 import Footer from './Footer';
 import Sobre from './Sobre';
 import Modelos from './Modelos';
-import Carrousel from './Carrousel';
+import Home from './Home';
 import ArticleHeader from './ArticleHeader';
+import { useViewportScroll } from 'framer-motion';
 
 const useStyles = makeStyles({
     container: {
@@ -33,16 +34,25 @@ const useStyles = makeStyles({
 });
 
 
-export default function Content() {
+export default function Content(props) {
     const classes = useStyles();
+
+    const { articleId } = props;
+
+    const {scrollYProgress} = useViewportScroll();
+
+    function scroll(){
+        return console.log(scrollYProgress);
+    };
+
     return (
         <main className={classes.main}>
-            <Container id="home" className={classes.container} maxWidth={false}>
-                <Carrousel />
+            <Container onClick={() => scroll} id="home" className={classes.container} maxWidth={false}>
+                    <Home />
             </Container>
             <Container id="portfolio" className={classes.containerReverse} maxWidth={false}>
-                <ArticleHeader title="Portfólio" subtitle="Galeria de imagens" />
-                <Modelos />
+                    <ArticleHeader title="Portfólio" subtitle="Galeria de imagens" />
+                    <Modelos />
             </Container>
             <Container id="about" className={classes.container} maxWidth={false}>
                 <ArticleHeader title="Sobre" subtitle="História do autor" />

@@ -1,15 +1,29 @@
 import React from 'react';
-import { makeStyles, Paper } from '@material-ui/core';
-import {motion} from 'framer-motion';
+import { makeStyles} from '@material-ui/core';
+import {motion, AnimatePresence, AnimateSharedLayout} from 'framer-motion';
+import ModelImage from './ModelImage';
+
+//images
+import todosApp from '../assets/todosApp.png';
+import car from '../assets/car.png';
+import gun from '../assets/gun.png';
+import quizer from '../assets/quizer.png';
+import sind from '../assets/sind.png';
+import mercosul from '../assets/mercosulBoard.jpg';
+import baby from '../assets/baby.png';
 
 const useStyles = makeStyles({
     content: {
-        height: '40vh',
+        height: '60vh',
         textAlign: 'center',
         lineHeight: '1.5',
         display: 'flex',
         flexFlow: 'row wrap',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        overflowY: 'auto',
+        borderRadius: '20px',
+        padding: '20px',
+        backgroundColor: '#dce6d5',
     },
     paper: {
         flexBasis: '200px',
@@ -25,28 +39,18 @@ export default function Modelos(){
     const classes = useStyles();
 
     return(
-        <div className={classes.content}>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={0} >A</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={1} >B</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={1} >C</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={2} >D</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={2} >E</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={2} >F</Paper>
-            </motion.div>
-            <motion.div className={classes.paper} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Paper elevation={2} >G</Paper>
-            </motion.div>
-        </div>
+        <AnimateSharedLayout>
+            <AnimatePresence>
+                <motion.div className={classes.content} layout>
+                    <ModelImage content={todosApp}/>
+                    <ModelImage content={car}/>
+                    <ModelImage content={gun}/>
+                    <ModelImage content={quizer}/>
+                    <ModelImage content={sind}/>
+                    <ModelImage content={mercosul}/>
+                    <ModelImage content={baby}/>
+                </motion.div>
+            </AnimatePresence>
+        </AnimateSharedLayout>
     );
 }

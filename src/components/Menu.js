@@ -20,8 +20,10 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Menu() {
+export default function Menu(props) {
   const classes = useStyles();
+
+  const {setArticleId} = props;
 
   return (
     <AppBar position="sticky" color="default" className={classes.appBar}>
@@ -29,19 +31,19 @@ export default function Menu() {
         <Typography variant="h6">
           Bruno
         </Typography>
-        <IconButton href="#home" className={classes.buttons}>
+        <IconButton href="#home" size="medium" onClick={() => setArticleId(1)}>
           <HomeIcon />
         </IconButton>
-        <IconButton href="#portfolio">
+        <IconButton href="#portfolio" onClick={() => setArticleId(2)}>
           <DirectionsCarIcon />
         </IconButton>
-        <IconButton href="#about">
+        <IconButton href="#about"  onClick={() => setArticleId(3)}>
           <InfoIcon />
         </IconButton>
-        <IconButton href="#languages">
+        <IconButton href="#languages"  onClick={() => setArticleId(4)}>
           <CodeIcon/>
         </IconButton>
-        <IconButton href="#contact">
+        <IconButton href="#contact"  onClick={() => setArticleId(5)}>
           <PhoneIcon />
         </IconButton>
       </Toolbar>

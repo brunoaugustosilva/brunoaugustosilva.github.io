@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { CardHeader, Avatar, CardContent, Typography, CardActions, IconButton, makeStyles, Card} from '@material-ui/core';
 
 //icons
@@ -15,7 +15,8 @@ const useStyles = makeStyles({
     card: {
         backgroundColor: '#dce6d5',
         flex: '3',
-        maxWidth: '50vh',
+        maxWidth: '25vw',
+        fontSize: '1rem',
         height: '280px',
         textAlign: 'left',
         display: 'flex',
@@ -28,7 +29,8 @@ const useStyles = makeStyles({
        justifyContent: 'center'
     },
     content: {
-        flexBasis: '50%'
+        flexBasis: '50%',
+        fontSize: '1.6rem'
     }
 });
 
@@ -36,8 +38,7 @@ const useStyles = makeStyles({
 export default function Code(props){
     const classes = useStyles();
 
-    const {view, setView} = props;
-    const [pos, setPos] = useState(1);
+    const {view, setView, pos, setPos} = props;
 
     let result = getLanguageById(pos);
     let element = result[0];

@@ -15,27 +15,29 @@ const useStyles = makeStyles({
         display: 'flex',
         flexFlow: 'column',
         alignItems: 'center',
-        margin: '10vh 0',
+        margin: '3rem 0',
         '& h1': {
-            fontSize: '2em',
-            margin: '0.67em 0',
+            fontSize: '5rem',
+            margin: '0.7rem 0',
+            textAlign: 'center',
+        },
+        '& h2': {
+            fontWeight: '100',
+            marginTop: '2rem',
         }
-    },
+    }
 })
 
 function ArticleHeader(props) {
     const classes = useStyles();
 
-    const content = {
-        title: props.title,
-        subtitle: props.subtitle
-    };
+    const {title, subtitle} = props;
 
     return(
         <div className={classes.articleTitle}>
-            <h1>{content.title}</h1>
+            <h1>{title}</h1>
             <hr className={classes.hr}/>
-            <h2>{content.subtitle}</h2>
+            <h2>{subtitle}</h2>
         </div>
     );
 }

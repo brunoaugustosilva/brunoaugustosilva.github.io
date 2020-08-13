@@ -11,16 +11,20 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkIcon from '@material-ui/icons/Link';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+//images
+import contact from '../assets/contato.jpg';
+
 const useStyles = makeStyles({
     content: {
         textAlign: 'center',
         overflowY: 'auto',
     },
     buttons: {
-        margin: '10px',
+        margin: '1rem',
         color: '#1d1d1d',
-        padding: '20px 8px',
+        padding: '1.25rem 0.5rem',
         backgroundColor: '#c2ccbb',
+        fontSize: '1.6rem',
     }
 });
 

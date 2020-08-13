@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import { makeStyles, Typography, Slider} from '@material-ui/core';
+import {AnimateSharedLayout, AnimatePresence, motion} from 'framer-motion';
 
 //data
 import { getLifeById } from '../hooks/GetData';
@@ -20,11 +21,15 @@ const useStyles = makeStyles({
         boxShadow: '1px 2px 6px #0000007a',
     },
     description: {
-        flexBasis: '50%',
+        flexBasis: '20rem',
+        overflow: 'hidden',
     },
     slider: {
         marginTop: '5vh',
         color: '#51802d',
+    },
+    body: {
+        fontSize: '1.6rem'
     }
 });
 
@@ -77,9 +82,18 @@ export default function Sobre(){
 
     return(
         <div className={classes.content}>
-            <Typography className={classes.description} variant="body1">
-                     {content.description}
-            </Typography>
+            <div className={classes.description}>
+                <AnimateSharedLayout>
+                    <AnimatePresence>
+                        <motion.div layout 
+                        key={content.id} initial={{x: [-100, 0]}}>
+                            <Typography variant="body1" className={classes.body}>
+                                {content.description}
+                            </Typography>
+                        </motion.div>
+                    </AnimatePresence>
+                </AnimateSharedLayout>
+            </div>
             <Slider className={classes.slider}
                 defaultValue={1}
                 value={value}
